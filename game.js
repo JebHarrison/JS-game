@@ -1,4 +1,4 @@
-import { update as updateSnake, draw as drawSnake, SNAKE_SPEED } from './snake'
+import { update as updateSnake, draw as drawSnake, SNAKE_SPEED } from './snake.js'
 
 let lastRenderTime = 0 
 
@@ -12,7 +12,7 @@ function main(currentTime) {
  
 
  
- console.log(currentTime)
+ console.log('Render')
  lastRenderTime = currentTime
 
  update()
@@ -22,7 +22,7 @@ function main(currentTime) {
 window.requestAnimationFrame(main)
 
 function update(){
-    update()
+    updateSnake()
 }
 
 function draw(){
