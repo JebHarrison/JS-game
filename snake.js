@@ -5,6 +5,8 @@ export function update(){
     console.log('update snake')
 }
 
-export function draw(){
-    console.log('draw snake')
+export function draw(gameBoard){
+    snakebody.forEach(segmant => {
+
+    })
 }
