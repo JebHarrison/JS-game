@@ -7,6 +7,10 @@ export function update(){
 
 export function draw(gameBoard){
     snakebody.forEach(segmant => {
-
+        const snakeElement = document.createElement('div')
+        snakeElement.style.gridRowStart = segmant.x
+        snakeElement.style.gridColumnStart = segmant.y
+        snakeElement.classList.add('snake')
+        gameBoard.appendChild(snakeElement)
     })
 }
