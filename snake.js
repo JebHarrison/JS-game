@@ -1,5 +1,9 @@
 export const SNAKE_SPEED = 1
-const snakeBody = [{x: 11, y:11}]
+const snakeBody = [
+    {x: 10, y:11},
+    {x: 11, y:11},
+    {x: 12, y:11}
+]
 
 export function update(){
     for (let i =snakeBody.length - 2; i >=0; i--){
