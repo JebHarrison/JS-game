@@ -1,5 +1,7 @@
+import { SNAKE_SPEED } from './snake'
+
 let lastRenderTime = 0 
-const SNAKE_SPEED = 1
+
 
 
 function main(currentTime) {
@@ -24,5 +26,5 @@ function update(){
 }
 
 function draw(){
-    
+
 }
