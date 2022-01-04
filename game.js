@@ -1,5 +1,5 @@
 let lastRenderTime = 0 
-const SNAKE_SPEED = 2
+const SNAKE_SPEED = 1
 
 
 function main(currentTime) {
