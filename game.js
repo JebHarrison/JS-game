@@ -5,12 +5,24 @@ const SNAKE_SPEED = 1
 function main(currentTime) {
    
  window.requestAnimationFrame(main)
- if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
  const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
+ if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
+ 
 
  
  console.log(currentTime)
  lastRenderTime = currentTime
+
+ update()
+ draw()
 }
 
 window.requestAnimationFrame(main)
+
+function update(){
+
+}
+
+function draw(){
+    
+}
