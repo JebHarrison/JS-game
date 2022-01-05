@@ -46,4 +46,5 @@ function addSegments() {
         snakeBody.push({ ...snakeBody[snakeBody.length -1] })
     }
 
+    newSegmants = 0
 }
