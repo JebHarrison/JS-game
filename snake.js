@@ -21,3 +21,21 @@ export function draw(gameBoard){
         gameBoard.appendChild(snakeElement)
     })
 }
+
+
+export function expandSnake(amount) {
+    newSegmants += amount 
+}
+
+export function onSnake(position) {
+    return snakeBody.some(segmant => {
+        return equalPositions(segmant, position)
+    })
+}
+
+function equalPositions(pos1, pos2) {
+    return pos1.x === pos2.x && pos1.y === pos2.y
+}
+
+
+function addSegments() 

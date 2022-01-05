@@ -1,7 +1,14 @@
-let food = { x:0, y: 0 }
+import { onSnake, expandSnake } from './snake.js'
+
+
+let food = { x:10, y: 1 }
+const EXPANTON_RATE = 1
 
 export function update(){
-  
+  if (onSnake(food)) {
+      expandSnake(EXPANTON_RATE)
+      food = { x: 20, y: 10 }
+  }
 }
 
 export function draw(gameBoard) {
