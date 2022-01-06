@@ -19,7 +19,9 @@ window.addEventListener('keydown', e => {
             if (lastInputDirection.y !== 0) break
             inputDirection = { x: 0, y: 1}
             break
-    }
+        
+        }
+        console.log(lastInputDirection)
 })
 
 export function getInputDirection(){
