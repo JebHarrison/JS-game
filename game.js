@@ -16,6 +16,7 @@ function main(currentTime) {
          window.location = '/'
      }
      return
+    
  }
     
 
@@ -46,5 +47,5 @@ function draw(){
 }
 
 function checkDeath() {
-    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }

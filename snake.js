@@ -8,18 +8,18 @@ export function update(){
     addSegments()
     
     const inputDirection = getInputDirection()
-    for (let i =snakeBody.length - 2; i >=0; i--){
-    snakeBody[i +1] = { ...snakeBody[i]}
+    for (let i = snakeBody.length - 2; i >= 0; i--){
+    snakeBody[i +1] = { ...snakeBody[i] }
     }
     snakeBody[0].x += inputDirection.x
     snakeBody[0].y += inputDirection.y
 }
 
-export function draw(gameBoard){
+export function draw(gameBoard) {
     snakeBody.forEach(segmant => {
         const snakeElement = document.createElement('div')
-        snakeElement.style.gridRowStart = segmant.x
-        snakeElement.style.gridColumnStart = segmant.y
+        snakeElement.style.gridRowStart = segmant.y
+        snakeElement.style.gridColumnStart = segmant.x
         snakeElement.classList.add('snake')
         gameBoard.appendChild(snakeElement)
     })
