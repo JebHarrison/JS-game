@@ -1,5 +1,6 @@
 import { getInputDirection } from "./input.js"
 
+
 export const SNAKE_SPEED = 5
 const snakeBody = [{x: 11, y:11}]
 let newSegments = 0
@@ -47,6 +48,9 @@ export function snakeIntersection(){
 }
 
 function equalPositions(pos1, pos2) {
+    if (pos1.x === pos2.x && pos1.y === pos2.y) {
+        console.log('Snake eats food')
+    } 
     return pos1.x === pos2.x && pos1.y === pos2.y
 }
 
